@@ -6,15 +6,13 @@ import axios from 'axios'
 import { useEffect, useState } from "react";
 import MovisDetails from "./Components/MovisDetails";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllMovie } from "./Reudx/actions/moviaction";
 
 function App() {
 
   const [movies, setmovies] = useState([])
   const [PageCount, setPageCount] = useState(0)
 
-  const dispatch=useDispatch()
-
+  
   // get all movies
   const getallMovis = async () => {
     const res = await axios.get("https://api.themoviedb.org/3/movie/popular?api_key=52ef927bbeb21980cd91386a29403c78&language=ar-US")
@@ -31,7 +29,6 @@ function App() {
 
   useEffect(() => {
   getallMovis()
-  dispatch(getAllMovie)
   }, [])
 
   // search

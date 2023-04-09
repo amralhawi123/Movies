@@ -6,7 +6,6 @@ import axios from 'axios'
 import { useEffect, useState } from "react";
 import MovisDetails from "./Components/MovisDetails";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllMovie } from "./Reudx/actions/moviaction";
 
 function App() {
 
@@ -31,7 +30,7 @@ function App() {
 
   useEffect(() => {
   getallMovis()
-  dispatch(getAllMovie)
+  dispatch()
   }, [])
 
   // search
