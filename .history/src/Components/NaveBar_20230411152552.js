@@ -31,7 +31,7 @@ const NavBar = () => {
               <img className="logo" src={logo} alt="dfs" />
             </a>
           </Col>
-          <Col xs="10" lg="11" className=" d-flex align-items-center input2">
+          <Col xs="12" lg="11" className=" d-flex align-items-center">
             <div className="search  w-100">
               <i className="fa fa-search"></i>
               <input onChange={(e) => Onsearch(e.target.value)} type="text" className="form-control" placeholder="ابحث" />
