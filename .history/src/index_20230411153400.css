@@ -139,9 +139,8 @@ body {
   .input2{
     width: 100% !important;
   }
+  .imageCss{
+    
+  }
 }
 
-.jcc-1{
-  display: flex;
-  justify-content: center;
-}

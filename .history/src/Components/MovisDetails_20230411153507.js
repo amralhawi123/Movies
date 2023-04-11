@@ -21,16 +21,16 @@ const MovisDetails = ({movies}) => {
 
     return (
         <div>
-            <Row className="justify-content-center mt-4">
-                <Col md="4" xs="12" sm="12" className="mt-4 jcc-1">
-                <img
-                            className="img-movie w-10"
+            <Row className="justify-content-center">
+                <Col md>
+                <Col/>
+                <Col md="12" xs="12" sm="12" className="mt-4 ">
+                    <div className="card-detalis  d-flex align-items-center ">
+                        <img
+                            className="img-movie w-30 imageCss"
                             src={`https://image.tmdb.org/t/p/w500/` + movi.poster_path}
                             alt="ascad"
                         />
-                </Col>
-                <Col md="8" xs="12" sm="12" className="mt-4 ">
-                    <div className="card-detalis  d-flex align-items-center ">
                         <div className="justify-content-center text-center  mx-auto">
                             <p className="card-text-details border-bottom">
                                 اسم الفيلم: {movi.title}

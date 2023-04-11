@@ -22,7 +22,7 @@ const MovisDetails = ({movies}) => {
     return (
         <div>
             <Row className="justify-content-center mt-4">
-                <Col md="4" xs="12" sm="12" className="mt-4 jcc-1">
+                <Col md="4" xs="12" sm="12" className="mt-4 ">
                 <img
                             className="img-movie w-10"
                             src={`https://image.tmdb.org/t/p/w500/` + movi.poster_path}
